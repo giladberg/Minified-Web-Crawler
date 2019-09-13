@@ -1,0 +1,127 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #141e30,
+    #243b55
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #141e30,
+    #243b55
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  min-height: 100%;
+
+  flex-wrap: nowrap;
+}
+
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-title {
+  color: #dc143c;
+  font-size: 3rem;
+  /* margin-bottom: 8rem; */
+  font-family: 'Righteous', cursive;
+}
+
+input:focus,
+textarea {
+  outline: none !important;
+}
+
+input,
+textarea {
+  color: Gold;
+  border: none;
+  padding-bottom: 1rem;
+  margin-bottom: 2.5rem !important;
+  border-bottom: 1.2px solid Gold;
+  background-color: transparent;
+  font-size: 1.4rem !important;
+  font-family: 'Concert One', cursive !important;
+}
+
+input::placeholder {
+  color: Gold;
+}
+
+.btn {
+  background-color: #47d147;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  display: inline-block;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.3rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+  outline: none !important;
+}
+.btn:hover,
+.btn:link,
+.btn:visited {
+  color: white;
+  outline: none !important;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(white, 0.5);
+  background: linear-gradient(white, white);
+  color: #47d147;
+  outline: none !important;
+}
+.btn:after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.urls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+a {
+  color: orange;
+  font-size: 2.6rem !important;
+  font-family: 'Bad Script', cursive;
+  padding: 1rem;
+}
+
+#indication {
+  display: none;
+  padding: 1rem 2rem;
+}

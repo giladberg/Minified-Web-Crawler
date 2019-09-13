@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower|Patrick+Hand|Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bad+Script|Concert+One|Indie+Flower|Luckiest+Guy|Pathway+Gothic+One|Righteous|Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <title>Minified Web Crawler</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="main-title">Minified Web Crawler</h1>
+      <div id="indication">
+        <h3 id="indication__h3"></h3>
+      </div>
+      <div class="inputs-container" id="inputs-container"></div>
+      <button class="btn" onClick="sendUrls()">
+        Send
+      </button>
+      <div class="urls" id="urls"></div>
+    </div>
+
+    <script src="utilities.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
